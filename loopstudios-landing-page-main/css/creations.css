@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.creation-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.creation-text {
+  width: 85%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 0 45px 0;
+  justify-content: space-between;
+}
+.creation-text h1 {
+  font-size: 2.5rem;
+}
+.creation-text button {
+  height: 38px;
+  width: 140px;
+  letter-spacing: 2px;
+  border: 1px solid black;
+  background-color: var(--white);
+}
+.creations {
+  gap: 20px;
+  width: 86%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.creations div {
+  width: 220px;
+  height: 450px;
+  display: flex;
+  padding: 0 0 25px 25px;
+  background-size: cover;
+  align-items: last baseline;
+  justify-content: flex-start;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.earth {
+  background-image: url(/images/desktop/image-deep-earth.jpg);
+}
+.night {
+  background-image: url(/images/desktop/image-night-arcade.jpg);
+}
+.soccer {
+  background-image: url(/images/desktop/image-soccer-team.jpg);
+}
+.grid {
+  background-image: url(/images/desktop/image-grid.jpg);
+}
+.above {
+  background-image: url(/images/desktop/image-from-above.jpg);
+}
+.pocket {
+  background-image: url(/images/desktop/image-pocket-borealis.jpg);
+}
+.curiosity {
+  background-image: url(/images/desktop/image-curiosity.jpg);
+}
+.fish-eye {
+  background-image: url(/images/desktop/image-fisheye.jpg);
+}
+.creations div h1 {
+  color: rgb(228, 226, 226);
+  font-weight: 100;
+  font-family: "lgt";
+  font-size: 2.1rem;
+  line-height: 2.2rem;
+}
+.grid h1 {
+  width: 50%;
+}
+@media (max-width: 535px) {
+  .creations div {
+    width: 95%;
+    height: 20vh;
+    padding: 0 0 15px 15px;
+  }
+  .creations div h1 {
+    width: 50%;
+  }
+  .creations div img {
+    width: fit-content;
+    height: 100%;
+  }
+  button {
+    bottom: 0;
+    left: 32%;
+    position: absolute;
+  }
+  .creation-container {
+    height: 215vh;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 300px) {
+  button {
+    left: 27%;
+  }
+}
